@@ -69,7 +69,7 @@ app.get("/api/languages", (req, res) => {
   res.json(languages.getData())
 })
 
-app.post('/images', (req, res) => {
+app.post('/api/images', (req, res) => {
   try {
     client.search(req.body.text)
       .then(images => {
